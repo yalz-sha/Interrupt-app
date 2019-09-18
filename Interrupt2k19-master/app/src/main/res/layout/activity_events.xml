@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgrl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Events">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cont">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fgrl">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="210dp"
+                    android:layout_height="210dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/EventIcon"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/EventIcon"
+                    android:fontFamily="@font/gothamu"
+                    android:padding="5dp"
+                    android:text="HELLO"
+                    android:textColor="#ffffffee"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/descti"
+                    android:layout_below="@+id/t1"
+                    android:textSize="30sp"
+                    android:textColor="#ffffffee"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/gothamu"
+                    android:textAlignment="center"
+                    android:text="DESCRIPTION"/>
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/descti"
+                    android:textSize="30sp"
+                    android:textColor="#ffffffee"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:textStyle="italic"
+                    android:textAlignment="center"
+                    android:text=".\n.\n.\n.\n."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rulesti"
+                    android:layout_below="@+id/desc"
+                    android:textSize="30sp"
+                    android:textColor="#ffffffee"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/gothamu"
+                    android:textAlignment="center"
+                    android:text="RULES"/>
+
+                <TextView
+                    android:id="@+id/rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rulesti"
+                    android:textSize="30sp"
+                    android:textColor="#ffffffee"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:textStyle="italic"
+                    android:textAlignment="center"
+                    android:text=".\n.\n.\n.\n."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contti"
+                    android:layout_below="@+id/rules"
+                    android:textSize="30sp"
+                    android:textColor="#ffffffee"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/gothamu"
+                    android:textAlignment="center"
+                    android:text="CONTACT US"/>
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contti"
+                    android:textSize="30sp"
+                    android:textColor="#ffffffee"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:textStyle="italic"
+                    android:textAlignment="center"
+                    android:text=".\n.\n.\n.\n."/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/regbut"
+                    android:fontFamily="@font/gothamu"
+                    android:text="REGISTER"
+                    android:layout_margin="30dp"
+                    android:textStyle="italic"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/contact"
+                    android:textSize="20sp"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
